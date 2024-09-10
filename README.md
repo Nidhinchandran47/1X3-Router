@@ -23,3 +23,5 @@ Router is a device that forward data packet between computer networks. This rout
 | valid_out_`x`| output    | 1     | Signal the output `data_out_x` is valid       |
 | busy         | output    | 1     | detect busy state to stop accepting new input |
 | error        | output    | 1     | Show the parity check output, high if errror  |
+
+`x` can be `1`, `2` or `3` accodring to the destination.
