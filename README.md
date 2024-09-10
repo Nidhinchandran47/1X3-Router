@@ -12,10 +12,14 @@ Router is a device that forward data packet between computer networks. This rout
 
 ## Interface
 
-| Port         | Direction | Width | Function                                     |
-| ------------ | --------- | ----- | -------------------------------------------- |
-| clk          | input     | 1     | Triger events at positive edge               |
+| Port         | Direction | Width | Function                                      |
+| ------------ | --------- | ----- | --------------------------------------------  |
+| clk          | input     | 1     | Triger events at positive edge                |
 | pkt_valid    | input     | 1     | High when new packet is arriving (from Source network)  |
-| resetn       | input     | 1     | Active low synchronous reset                 |
-| data_in      | input     | 8     | Data Packet from the source                  |
+| resetn       | input     | 1     | Active low synchronous reset                  |
+| data_in      | input     | 8     | Data Packet from the source                   |
 | read_enb_`x` | input     | 1     | Active high signal for reading packet to `x` destination (from Destination Network) |
+| data_out_`x` | output    | 8     | The transmitted packet to destination *Output*|
+| valid_out_`x`| output    | 1     | Signal the output `data_out_x` is valid       |
+| busy         | output    | 1     | detect busy state to stop accepting new input |
+| error        | output    | 1     | Show the parity check output, high if errror  |
