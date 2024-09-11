@@ -35,3 +35,6 @@ This router consist of 4 main blocks,
 - `CONTROLLER` : a FSM which generate all sorts of control signals
 - `SYNCHRONIZER` : provide synchronization between register and controller
 
+## More Details
+
+- ### [Protocol](protocol.md)
