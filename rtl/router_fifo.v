@@ -1,13 +1,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer:        NIDHIN CHANDRAN
-// 
+//
 // Create Date:     03/Aug/2024
 // Module Name:     router_fifo
 // Project Name:    1X3 Router
-//  
+//
 // Description:     FIFO buffer for a router with read and write operations, 
 //                  including mechanisms for handling reset and soft reset conditions.
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 module router_fifo (
@@ -51,7 +51,6 @@ module router_fifo (
                 wr_ptr <= wr_ptr + 1; 
             else
                 wr_ptr <= wr_ptr;
-            
             if (read_enb && !empty) 
                 re_ptr <= re_ptr + 1;
             else
@@ -75,8 +74,8 @@ module router_fifo (
                 fifo_counter <= fifo_counter - 1;               //  decrement
             end
         end
-	else
-		fifo_counter <= fifo_counter;
+    else
+    	fifo_counter <= fifo_counter;
     end
 
     // Reading data from FIFO

@@ -25,3 +25,13 @@ Router is a device that forward data packet between computer networks. This rout
 | error        | output    | 1     | Show the parity check output, high if errror  |
 
 `x` can be `1`, `2` or `3` accodring to the destination.
+
+## Architecture
+
+This router consist of 4 main blocks,
+
+- `FIFO` : to store the packets till destination is ready
+- `REGISTER` : consist of 4 internal register packet switching and parity checking
+- `CONTROLLER` : a FSM which generate all sorts of control signals
+- `SYNCHRONIZER` : provide synchronization between register and controller
+
