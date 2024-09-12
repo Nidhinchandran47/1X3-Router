@@ -22,3 +22,25 @@ There are 3 FIFOs used in this project, one in each output. It has length of 16 
 | empty      | output    | 1     | FSM, Synchronizer | FIFO empty                                       |
 | full       | output    | 1     | Synchronizer      | FIFO full                                        |
 | data_out   | output    | 8     | External          | packet to destination                            |
+
+## Operations
+
+### Read and Write pointers
+
+There are 2 5 bit internal register to point the next location to be read amd write. Foreeach reading and writing operation, respective pointer get incermented.
+
+### Internal Counter
+
+There is an internal 8 bit down counter which loads the payload value from header and down count till zero to have information about remaining packets.
+
+### Latching lfd_state
+
+Since packet from the inputs are passed through register, lfd_state is also delayed in cycle for synchronization.
+
+### Empty and Full flags
+
+Empty flag is set high, when write pointer and read pointer are same. Full when MSB of read and write pointer are opposite and rest of the bits are same.
+
+### Reading and Writing
+
+Reading is done when counter not equal to zero, read enable is one and not empty. Writing is done when write enable is high and not full.
