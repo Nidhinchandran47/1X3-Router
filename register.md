@@ -35,6 +35,6 @@ This module implements 4 internal registers to hold the `header byte`, `controll
 
 ### Parity checking 
 
-An exor based (even parity) operation is done to ensure the error checking, parity_done signal will be high when last packet (parity) is arrived and stored to packet parity reg. Then set the err signal when there is a mismatch with calculated parity in internal_prt_reg and packet_prt_reg.
+An exor based (even parity) operation is done to ensure the error checking, parity_done signal will be high when last packet (parity) is arrived and stored to packet parity reg. Then set the err signal when there is a mismatch with calculated parity in internal_prt_reg and packet_prt_reg
 
 🏠[Home](README.md)
