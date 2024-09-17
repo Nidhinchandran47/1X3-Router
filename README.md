@@ -40,3 +40,5 @@ This router consist of 4 main blocks,
 - ### [Protocol](protocol.md)
 
 - ### [FIFO](fifo.md)
+
+- ### [Register](register.md)
