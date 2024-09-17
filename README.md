@@ -42,3 +42,5 @@ This router consist of 4 main blocks,
 - ### [FIFO](fifo.md)
 
 - ### [Register](register.md)
+
+- ### [Controller](fsm.md)
