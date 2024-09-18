@@ -20,25 +20,25 @@ This module generates all the control signals when a new packet arrives. Control
 | ---------- | --------- | ----- | ----------------- | ------------------------------------------------ |
 | clock      | input     | 1     | External          | Synchronize the operations at positive edge      |
 | resetn     | input     | 1     | External          | Active low reset given from source               |
-| pkt_valid | . | . | . | . |
-| parity_done | . | . | . | . |
-| data_in | . | . | . | . |
-| soft_reset_0 | . | . | . | . |
-| soft_reset_1 | . | . | . | . |
-| soft_reset_2 | . | . | . | . |
-| fifo_full | . | . | . | . |
-| low_packet_valid | . | . | . | . |
-| fifo_empty_0 | . | . | . | . |
-| fifo_empty_1 | . | . | . | . |
-| fifo_empty_2 | . | . | . | . |
-| busy | . | . | . | . |
-| detect_add | . | . | . | . |
-| ld_state | . | . | . | . |
-| laf_state | . | . | . | . |
-| full_state | . | . | . | . |
-| write_enb_reg | . | . | . | . |
-| rst_int_reg | . | . | . | . |
-| lfd_state | . | . | . | . |
+| pkt_valid | input | 1  | External | . |
+| parity_done | input | 1  | External  | . |
+| data_in | input | 2 | External | . |
+| soft_reset_0 | input | 1  | Synchronizer | . |
+| soft_reset_1 | input | 1  | Synchronizer  | . |
+| soft_reset_2 | input | 1  | Synchronizer  | . |
+| fifo_full | input | 1  | Synchronizer | . |
+| low_packet_valid | input | 1  | Register | . |
+| fifo_empty_0 | input | 1  | FIFO 0 | . |
+| fifo_empty_1 | input | 1  | FIFO 1 | . |
+| fifo_empty_2 | input | 1  | FIFO 2 | . |
+| busy | output | 1  | External |  |
+| detect_add | output | 1  | Register, Sync. | . |
+| ld_state | output  | 1  | Register | . |
+| laf_state | output  | 1  | Register | . |
+| full_state | output  | 1  | Register | . |
+| write_enb_reg | output  | 1  | Synchronizer | . |
+| rst_int_reg | output  | 1  | Register | . |
+| lfd_state | output  | 1 | FIFO, Register | . |
 
 
 🏠[Home](README.md)
