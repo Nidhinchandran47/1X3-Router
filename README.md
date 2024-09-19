@@ -44,3 +44,5 @@ This router consist of 4 main blocks,
 - ### [Register](register.md)
 
 - ### [Controller](fsm.md)
+  
+- ### [Synchronizer](synch.md)
