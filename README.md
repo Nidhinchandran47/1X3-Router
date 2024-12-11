@@ -7,7 +7,7 @@ Router is a device that forward data packet between computer networks. This rout
 - **Single Soure 3 Destination** : Routes data from one input port to three distinct output ports.
 - **Custom Packet Format** : Frame consist of 3 part, `Header`, `Payload` and `Parity`. Each of 32 bit and varible length payload.
 - **Parity Check** : Detect error to ensure the data transmitted without getting corrupted.
-- **16 wide FIFO** : Able to store upto 16 packect in each destination, waiting read enable signal.
+- **16 wide FIFO** : Able to store upto 16 packet in each destination, waiting read enable signal.
 - **Soft reset** : Automatically reset the FIFO which is waiting for enable signal for longer than 30 clock cycles.
 
 ## Interface

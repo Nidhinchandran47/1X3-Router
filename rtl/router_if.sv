@@ -10,6 +10,8 @@ interface router_if (
   logic busy;
   logic [7:0] data_out;
 
+// Clocking Block 
+// Specify how signals are driven/sampled from tb agents. Provide Race-Free Operation.
   clocking src_drv_cb @(posedge clock);
     default input #1 output #1;
     input error;
@@ -42,6 +44,8 @@ interface router_if (
     input data_out;
   endclocking
 
+// Modport
+// Define directional access.
   modport SRC_DRV_MP(clocking src_drv_cb);
   modport SRC_MON_MP(clocking src_mon_cb);
   modport DEST_DRV_MP(clocking dest_drv_cb);
