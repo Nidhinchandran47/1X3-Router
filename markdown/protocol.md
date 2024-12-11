@@ -1,6 +1,6 @@
 # Protocol
 
-🏠[Home](README.md)
+🏠[Home](../README.md)
 
 Router is an [OSI](https://en.wikipedia.org/wiki/OSI_model) layer 3 routing device. Here we are expecting a input data of custom packet format.
 
@@ -48,4 +48,4 @@ Each outputs are buffered internally by a 16 byte fifo. Output at each data out 
 
 Next packet will appear only if the readenable is high, even though there is internal buffer, if the read enable is not high for 30 clock cycle, Buffer will be internally reseted.
 
-🏠[Home](README.md)
+🏠[Home](../README.md)

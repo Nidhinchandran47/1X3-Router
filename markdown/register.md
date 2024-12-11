@@ -2,6 +2,8 @@
 
 🏠[Home](README.md)
 
+[🔗Link to file](../rtl/router_regi.v)
+
 This module implements 4 internal registers to hold the `header byte`, `controller state byte`, `internal parity byte` and `packet parity byte`.
 
 ## Interface

@@ -1,5 +1,7 @@
 # Verification Plan
 
+🏠[Home](../README.md)
+
 **Objectives**
 
 The primary goals of the verification plan are:
@@ -10,8 +12,14 @@ The primary goals of the verification plan are:
 
 ## Testbench Architecture
 
-![tb_arc](tb_arc_router.drawio.png)
+![tb_arc](../tb_arc_router.drawio.png)
 
 ## Detailed Breakdown of Each Component
 
-- [Interface]()
+- [Interface](interface.md)
+
+
+
+
+
+🏠[Home](../README.md)

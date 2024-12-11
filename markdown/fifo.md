@@ -1,8 +1,10 @@
 # FIFO
 
- 🏠[Home](README.md)
+ 🏠[Home](../README.md)
 
 FIFO (First In First Out) are buffer memory device store memory in queue like strcature.
+
+[🔗Link to file](../rtl/router_fifo.v)
 
 There are 3 FIFOs used in this project, one in each output. It has length of 16 or it can buffer up to 16 packets. Even though each packet has a size of 8 bits, FIFO have 9 bit wide locations, extra one bit to store header information : `lfd_state`
 
@@ -47,4 +49,4 @@ Empty flag is set high, when write pointer and read pointer are same. Full when 
 
 Reading is done when counter not equal to zero, read enable is one and not empty. Writing is done when write enable is high and not full.
 
-🏠[Home](README.md)
+🏠[Home](../README.md)

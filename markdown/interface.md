@@ -1,5 +1,7 @@
 # Interface
 
+🏠[Home](../README.md)  🔙 [Back](verification.md)
+
 In SystemVerilog, an **interface** is a construct used to group related signals together, simplifying connections between modules and testbenches. It encapsulates signals, tasks, and functions, promoting modularity and reusability while reducing code complexity.
 
 [link to file](../rtl/router_if.sv)

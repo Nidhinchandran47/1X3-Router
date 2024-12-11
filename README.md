@@ -2,6 +2,8 @@
 
 Router is a device that forward data packet between computer networks. This router have 1 source port and 3 destination port, switch packets to destination according to address. The router efficiently routes data based on predefined conditions or protocols, ensuring seamless communication across connected networks.
 
+### [➡️ Verification](markdown/verification.md)
+
 ## Features
 
 - **Single Soure 3 Destination** : Routes data from one input port to three distinct output ports.
@@ -37,12 +39,12 @@ This router consist of 4 main blocks,
 
 ## More Details
 
-- ### [Protocol](protocol.md)
+- ### [Protocol](markdown/protocol.md)
 
-- ### [FIFO](fifo.md)
+- ### [FIFO](markdown/fifo.md)
 
-- ### [Register](register.md)
+- ### [Register](markdown/register.md)
 
-- ### [Controller](fsm.md)
+- ### [Controller](markdown/fsm.md)
   
-- ### [Synchronizer](synch.md)
+- ### [Synchronizer](markdown/synch.md)

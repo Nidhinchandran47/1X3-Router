@@ -1,6 +1,8 @@
 # Controller
 
-🏠[Home](README.md)
+🏠[Home](../README.md)
+
+[🔗Link to file](../rtl/router_fsm.v)
 
 This module generates all the control signals when a new packet arrives. Controller consider the whole operation into 8 state.
 
@@ -61,4 +63,4 @@ stateDiagram-v2
     LOAD_AFTER_FULL -->  LOAD_DATA :  !parity_done & !low_packet_valid
 ```
 
-🏠[Home](README.md)
+🏠[Home](../README.md)

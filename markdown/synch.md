@@ -1,5 +1,9 @@
 # Synchronizer
 
+🏠[Home](../README.md)
+
+[🔗Link to file](../rtl/router_sync.v)
+
 Provide Synchronization between router FSM and FIFO modules.
 
 ## Interface
@@ -17,3 +21,5 @@ Provide Synchronization between router FSM and FIFO modules.
 | vld_out_`x` | output | 1 | External | Indicate the data from FIFO is valid or not |
 | soft_reset_`x` | output | 1 | FIFO_`x` | To reset FIFO |
 | write_enb | output | 2 | FIFO | One hot encoding of destination address |
+
+🏠[Home](../README.md)
