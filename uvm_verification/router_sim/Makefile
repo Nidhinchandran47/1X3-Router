@@ -1,7 +1,5 @@
-#Makefile for UVM Testbench - Lab 10
+#Makefile for UVM Testbench - Router Verification
 
-# SIMULATOR = Questa for Mentor's Questasim
-# SIMULATOR = VCS for Synopsys's VCS
 
 SIMULATOR =Questa
 
@@ -9,7 +7,7 @@ SIMULATOR =Questa
 FSDB_PATH=/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64
 
 
-RTL= ../router_rtl/*
+RTL= ../../rtl/*
 work= work #library name
 SVTB1= ../router_tb/top.sv
 INC = +incdir+../router_tb +incdir+../router_test +incdir+../router_source +incdir+../router_destination
