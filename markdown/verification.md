@@ -18,7 +18,7 @@ The primary goals of the verification plan are:
 
 - [Interface](interface.md)
 - [Top Module](topmodule.md)
-- [Test]()
+- [Test](test.md)
 - [Environment]()
 - [Scoreboard]()
 - [Virtual sequence and Sequencer]()

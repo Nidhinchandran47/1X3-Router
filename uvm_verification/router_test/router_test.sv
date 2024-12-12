@@ -69,6 +69,8 @@ class router_base_test extends uvm_test;
   endfunction
 endclass
 
+// Test Classes
+
 class router_small_test extends router_base_test;
 
   `uvm_component_utils(router_small_test)
@@ -97,7 +99,7 @@ class router_small_test extends router_base_test;
   endtask
 
 
-endclass  //router_small_test extends router_base_test
+endclass
 
 class router_med_test extends router_base_test;
 
