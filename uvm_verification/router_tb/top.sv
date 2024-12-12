@@ -42,6 +42,8 @@ module top;
     run_test();
   end
 
+// Assertion
+
   property pkt_valid_busy;
     @(posedge clock) $rose(
         in_s.pkt_valid
