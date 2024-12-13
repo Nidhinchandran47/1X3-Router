@@ -13,7 +13,7 @@ class router_env extends uvm_env;
     super.new(name, parent);
   endfunction
 
-
+//Build Phase
   function void build_phase(uvm_phase phase);
     if (!uvm_config_db#(router_env_config)::get(this, "", "router_env_config", m_cfg))
       `uvm_fatal("CONFIG", "cannot get() m_cfg from uvm_config_db. Have you set() it?")
@@ -24,7 +24,7 @@ class router_env extends uvm_env;
     if (m_cfg.has_scoreboard) sb = router_scoreboard::type_id::create("sb", this);
     super.build_phase(phase);
   endfunction
-
+//Connect Phase
   function void connect_phase(uvm_phase phase);
     if (m_cfg.has_virtual_sequencer) begin
       if (m_cfg.has_source_agent) begin

@@ -2,7 +2,7 @@
 
 🏠[Home](../README.md)  🔙 [Back](verification.md)
 
-[🔗Link to File](../uvm_verification/router_test/router_test.sv)
+[**🔗Link to File**](../uvm_verification/router_test/router_test.sv)
 
 Setting Cofiguration db with testbench architecture details. 
 ```sv
