@@ -64,6 +64,8 @@ class router_scoreboard extends uvm_scoreboard;
       cov_src_data = src_data;
       router_cov1.sample();
 
+//since only one destination will recive data at a time, Only need to get from that destination.
+
       if (src_data.header[1:0] == 2'b00) fifo_dst[0].get(dest_data);
       if (src_data.header[1:0] == 2'b01) fifo_dst[1].get(dest_data);
       if (src_data.header[1:0] == 2'b10) fifo_dst[2].get(dest_data);
@@ -79,7 +81,7 @@ class router_scoreboard extends uvm_scoreboard;
   endtask
 
   function void check_data();
-    bit [7:0] prt;
+    bit [7:0] prt;  // Calcuation local parity for reference model
     prt = dest_data.header ^ 0;
     foreach (dest_data.payload[i]) begin
       prt = dest_data.payload[i] ^ prt;
@@ -92,12 +94,13 @@ class router_scoreboard extends uvm_scoreboard;
       `uvm_info("SCOREBOARD", "PAYLOAD MATCHED SUCCESSFULLY", UVM_LOW)
     else `uvm_info("SCOREBOARD", "PAYLOAD MISMATCHED", UVM_LOW)
 
-    if (src_data.parity == dest_data.parity)
+    if (src_data.parity == dest_data.parity)   // Source == Destination
       `uvm_info("SCOREBOARD", "PARITY MATCHED SUCCESSFULLY", UVM_LOW)
     else `uvm_info("SCOREBOARD", "PARITY MISMATCHED", UVM_LOW)
 
 
-    if (prt == dest_data.parity) `uvm_info("SCOREBOARD", "PARITY CHECK SUCCESSFULLY", UVM_LOW)
+    if (prt == dest_data.parity)             //  Local Parity == sent/recieved parity
+      `uvm_info("SCOREBOARD", "PARITY CHECK SUCCESSFULLY", UVM_LOW)
     else `uvm_info("SCOREBOARD", "ERROR IN PARITY", UVM_LOW)
 
     data_verified_count++;

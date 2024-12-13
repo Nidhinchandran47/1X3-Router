@@ -23,6 +23,7 @@ The primary goals of the verification plan are:
 - [Scoreboard]()
 - [Virtual sequence and Sequencer]()
 - [Configuration]()
+- [Transaction Class]()
 - #### Source 
   - [Agent top]()
   - [Agent]()
