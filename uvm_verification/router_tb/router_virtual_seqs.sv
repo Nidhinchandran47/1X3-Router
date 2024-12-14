@@ -16,6 +16,9 @@ class router_vbase_seq extends uvm_sequence #(uvm_sequence_item);
       `uvm_fatal("get_type_name()", "cannot get cfg")
     src_seqrh = new[m_cfg.number_of_source];
     dst_seqrh = new[m_cfg.number_of_dest];
+    //Polymorphisum allow parnet = child assignment only
+    //m_sequencer is parent and vsqrh is child, so assignment not possible
+    // So $cast required. 
     assert ($cast(vsqrh, m_sequencer))
     else begin
       `uvm_error("BODY", "error in $cast")
