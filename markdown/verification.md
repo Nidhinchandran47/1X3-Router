@@ -24,15 +24,9 @@ The primary goals of the verification plan are:
 - [Virtual sequence and Sequencer](vseq.md)
 - [Configuration]()
 - [Transaction Class]()
-- #### Source 
-  - [Agent top]()
-  - [Agent]()
-  - [Sequencer]()
-  - [Driver]()
-  - [Monitor]()
-  - [Sequence]()
-  - [configuration]()
-- #### Destination 
+
+- #### Source
+
   - [Agent top]()
   - [Agent]()
   - [Sequencer]()
@@ -41,5 +35,14 @@ The primary goals of the verification plan are:
   - [Sequence]()
   - [configuration]()
 
+- #### Destination
+
+  - [Agent top]()
+  - [Agent]()
+  - [Sequencer]()
+  - [Driver]()
+  - [Monitor]()
+  - [Sequence]()
+  - [configuration]()
 
 🏠[Home](../README.md)
