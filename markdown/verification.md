@@ -22,7 +22,7 @@ The primary goals of the verification plan are:
 - [Environment](environment.md)
 - [Scoreboard](sb.md)
 - [Virtual sequence and Sequencer](vseq.md)
-- [Configuration]()
+- [Configuration](config.md)
 - [Transaction Class]()
 
 - #### Source
@@ -33,7 +33,7 @@ The primary goals of the verification plan are:
   - [Driver]()
   - [Monitor]()
   - [Sequence]()
-  - [configuration]()
+  - [configuration](config.md)
 
 - #### Destination
 
@@ -43,6 +43,6 @@ The primary goals of the verification plan are:
   - [Driver]()
   - [Monitor]()
   - [Sequence]()
-  - [configuration]()
+  - [configuration](config.md)
 
 🏠[Home](../README.md)
