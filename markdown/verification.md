@@ -22,24 +22,27 @@ The primary goals of the verification plan are:
 - [Environment](environment.md)
 - [Scoreboard](sb.md)
 - [Virtual sequence and Sequencer](vseq.md)
-- [Configuration]()
+- [Configuration](config.md)
 - [Transaction Class]()
-- #### Source 
-  - [Agent top]()
-  - [Agent]()
-  - [Sequencer]()
-  - [Driver]()
-  - [Monitor]()
-  - [Sequence]()
-  - [configuration]()
-- #### Destination 
-  - [Agent top]()
-  - [Agent]()
-  - [Sequencer]()
-  - [Driver]()
-  - [Monitor]()
-  - [Sequence]()
-  - [configuration]()
 
+- #### Source
+
+  - [Agent top]()
+  - [Agent]()
+  - [Sequencer]()
+  - [Driver]()
+  - [Monitor]()
+  - [Sequence]()
+  - [configuration](config.md)
+
+- #### Destination
+
+  - [Agent top]()
+  - [Agent]()
+  - [Sequencer]()
+  - [Driver]()
+  - [Monitor]()
+  - [Sequence]()
+  - [configuration](config.md)
 
 🏠[Home](../README.md)
